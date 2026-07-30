@@ -1,17 +1,6 @@
-import nltk
-
-# Download VADER lexicon if not already present
-try:
-    nltk.data.find("sentiment/vader_lexicon.zip")
-except LookupError:
-    nltk.download("vader_lexicon")
-
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
-analyzer = SentimentIntensityAnalyzer()
+from textblob import TextBlob
 
 def detect_mood(text):
-
     text = text.lower()
 
     # Keyword-based detection
@@ -30,12 +19,12 @@ def detect_mood(text):
     if any(word in text for word in ["relaxed", "calm", "peaceful"]):
         return "Relaxed"
 
-    scores = analyzer.polarity_scores(text)
-    compound = scores["compound"]
+    # Sentiment Analysis using TextBlob
+    polarity = TextBlob(text).sentiment.polarity
 
-    if compound >= 0.5:
+    if polarity >= 0.5:
         return "Happy"
-    elif compound <= -0.5:
+    elif polarity <= -0.5:
         return "Sad"
     else:
         return "Neutral"
