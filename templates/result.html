@@ -12,11 +12,13 @@
 {% for food in foods %}
 <div class="food-card">
 <img src="{{ url_for('static', filename='images/' + food.Image) }}">
-<h2>{{ food.Food }}</h2>
-<p><b>Category:</b> {{ food.Category }}</p>
-<p><b>Calories:</b> {{ food.Calories }} kcal</p>
-<p><b>Nutrition:</b> {{ food.Nutrition }}</p>
-<p><b>Benefits:</b> {{ food.Benefits }}</p>
+<h2>🍲 {{ food.Food }}</h2>
+
+<p>📂 <b>Category:</b> {{ food.Category }}</p>
+
+<p>🔥 <b>Calories:</b> {{ food.Calories }} kcal</p>
+
+<p>💚 <b>Benefits:</b> {{ food.Benefits }}</p>
 {% if food.Healthy == "Yes" %}<span class="badge">Healthy Choice ✅</span>{% endif %}
 </div>
 {% endfor %}
