@@ -1,0 +1,40 @@
+Mood,Food,Category,Calories,Benefits,Image
+Happy,Pizza,Fast Food,320,Boosts mood when eaten occasionally,pizza.jpg
+Happy,Burger,Fast Food,450,Comfort food,burger.jpg
+Happy,Fruit Juice,Beverage,120,Rich in vitamins,fruit_juice.jpg
+Happy,Pasta,Italian,350,Provides energy,pasta.jpg
+
+Sad,Dark Chocolate,Snack,180,May improve mood,dark_chocolate.jpg
+Sad,Ice Cream,Dessert,250,Comfort food,ice_cream.jpg
+Sad,Banana,Fruit,100,Rich in serotonin precursors,banana.jpg
+Sad,Hot Coffee,Beverage,90,Refreshing,coffee.jpg
+
+Neutral,Vegetable Salad,Healthy,150,Rich in fiber,salad.jpg
+Neutral,Grilled Chicken,Protein,280,High protein meal,grilled_chicken.jpg
+Neutral,Rice and Dal,Indian,300,Balanced nutrition,rice_dal.jpg
+Neutral,Soup,Healthy,140,Light and nutritious,soup.jpg
+
+Angry,Green Tea,Beverage,5,Helps relaxation,green_tea.jpg
+Angry,Fruit Bowl,Fruit,140,Rich in antioxidants,fruit_bowl.jpg
+Angry,Oatmeal,Healthy,220,Supports steady energy,oatmeal.jpg
+Angry,Nuts,Snack,170,Healthy fats,nuts.jpg
+
+Stressed,Smoothie,Beverage,180,Refreshing,smoothie.jpg
+Stressed,Yogurt,Dairy,120,Good for gut health,yogurt.jpg
+Stressed,Dry Fruits,Snack,200,Rich in nutrients,dry_fruits.jpg
+Stressed,Herbal Tea,Beverage,10,Calming effect,herbal_tea.jpg
+
+Excited,Milkshake,Beverage,250,Refreshing energy,milkshake.jpg
+Excited,Sandwich,Snack,300,Quick meal,sandwich.jpg
+Excited,French Fries,Fast Food,350,Tasty treat,french_fries.jpg
+Excited,Fresh Juice,Beverage,110,Hydrating,fresh_juice.jpg
+
+Relaxed,Herbal Tea,Beverage,10,Promotes calm,herbal_tea.jpg
+Relaxed,Oatmeal,Healthy,220,Light and filling,oatmeal.jpg
+Relaxed,Fruit Salad,Fruit,170,Rich in vitamins,fruit_salad.jpg
+Relaxed,Soup,Healthy,140,Warm and soothing,soup.jpg
+
+Tired,Coffee,Beverage,90,Boosts alertness,coffee.jpg
+Tired,Boiled Eggs,Protein,150,High protein,boiled_eggs.jpg
+Tired,Banana,Fruit,100,Quick energy,banana.jpg
+Tired,Nuts,Snack,170,Healthy fats,nuts.jpg

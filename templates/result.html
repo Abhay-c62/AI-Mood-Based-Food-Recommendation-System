@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<title>Recommendations</title>
+</head>
+<body>
+<h1 style="text-align:center;margin-bottom:10px;">🥗 Your Food Recommendations</h1>
+<p style="text-align:center;color:#cbd5e1;margin-bottom:35px;">Foods selected based on your current mood.</p>
+<div class="food-container">
+{% for food in foods %}
+<div class="food-card">
+<img src="{{ url_for('static', filename='images/' + food.Image) }}">
+<h2>{{ food.Food }}</h2>
+<p><b>Category:</b> {{ food.Category }}</p>
+<p><b>Calories:</b> {{ food.Calories }} kcal</p>
+<p><b>Nutrition:</b> {{ food.Nutrition }}</p>
+<p><b>Benefits:</b> {{ food.Benefits }}</p>
+{% if food.Healthy == "Yes" %}<span class="badge">Healthy Choice ✅</span>{% endif %}
+</div>
+{% endfor %}
+</div>
+<footer>Made with ❤️ using Flask + NLP + Machine Learning</footer>
+<button onclick="toggleTheme()">🌙 Theme</button>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body></html>
